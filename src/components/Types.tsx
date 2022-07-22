@@ -1,8 +1,12 @@
-import { RiArrowRightSLine } from "react-icons/ri"
+import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri"
 
-function Types({image, description, title, onClick}: {image: string, description: string, title: string, onClick: Function}) {
+function Types({image, description, title, onClick, leftClick}: {image: string, description: string, title: string, onClick: Function, leftClick: Function}) {
     return (
         <div className="classes">
+            <button className="arrow"
+            onClick={() => leftClick()}>
+                <RiArrowLeftSLine size={100} />
+            </button>
             <img src={image} />
             
             <div className="description">

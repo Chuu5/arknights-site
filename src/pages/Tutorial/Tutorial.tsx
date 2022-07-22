@@ -2,6 +2,7 @@ import "./Tutorial.css"
 import Data from "../../data.json"
 import Types from "../../components/Types"
 import { useState } from "react"
+import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
 function Tutorial() {
 
@@ -13,6 +14,19 @@ function Tutorial() {
         } else {
             setClassIndex(0)
         }
+        // Função para mudar de classe ao clickar na flecha
+    }
+
+    function changeIndexNegative(index: number) {
+
+        if(index - 1 !== -1) {
+            setClassIndex(index - 1)
+        } else {
+            setClassIndex(Data.classes.length - 1)
+        }
+
+        // Função para mudar de classe ao clickar na flecha esquerda
+
     }
 
     return (
@@ -63,29 +77,40 @@ function Tutorial() {
                     </div>  
                 </div>
 
+            </section>
+            <section>
                 <div className="tutor-text">
-
                     <div className="title">
                         <h2>Operators Classes</h2>
                     </div>
-                    <div className="description">
                         {
                             Data.classes.map( (classe, index) => {
                                 if(index === classIndex) {
                                     return(
-                                        <Types key={index} title={classe.type} image={classe.image} description={classe.description} 
-                                        onClick={() => changeIndex(index)}/>
-                                    )   
+                                        <Types key={index} title={classe.type} image={classe.image} description={classe.description}
+                                        onClick={() => changeIndex(index)}
+                                        leftClick={() => changeIndexNegative(index)}/>
+                                    )
                                 }
                             })
                         }
-
-                    </div>
-
-
+                        <div className="circle-container">
+                            {Data.classes.map( (value, index) => {
+                                if (index === classIndex) {
+                                    return (
+                                        <RiCheckboxBlankCircleFill className="circle active" size={25}/>
+                                    )
+                                }
+                                return(
+                                    <RiCheckboxBlankCircleFill className="circle" size={25}/>
+                                )
+                                // Codigo para fazer os circulos mudarem de cor se estiverem no mesmo index que a classe
+                            })}
+                
+                        </div>
                 </div>
-                </section>
-            </div>
+            </section>
+         </div>
         </div>
     ) 
 }
