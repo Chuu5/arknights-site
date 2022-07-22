@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 0 20px;
+    background-color: #1A1C22;
+    /* background-color: #7F8487; */
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .logo {
+    height: 40px;
+}
+
+nav .logo img {
+    height: 100%;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+nav .menu ul a {
+    /* color: rgb(36, 33, 33); */
+    color: white;
+
+}

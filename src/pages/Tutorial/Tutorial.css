@@ -1,0 +1,71 @@
+.tutor-body {
+    background-color: #26292B;
+}
+
+.tutor-container {
+    width: 800px;
+    max-width: 100%;
+
+
+    margin: 0 auto;
+    padding: 20px;
+
+    background-color: #1C1E1F;
+}
+
+.tutor-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid #22BBFF;
+}
+
+.title {
+    /* background-color: #22BBFF; */
+    margin-bottom: 10px;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    color: #888;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.highl {
+    filter: brightness(1.4);
+}
+
+.classes {
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+}
+
+.classes img,
+.classes .description {
+    height: 80%;
+}
+
+.classes .description {
+    border: 1px solid black;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.classes .arrow{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

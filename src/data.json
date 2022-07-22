@@ -1,0 +1,44 @@
+{
+    "classes": [
+        {
+            "type": "Caster",
+            "description": "They Are the ranged operators that do DPS magic damage, burst enemy but have low hp",
+            "image": "https://owwya.com/wp-content/uploads/2020/02/Arknights-Caster-Class-Icon.png"
+        },
+        {
+            "type": "Guard",
+            "description": "Even if they are a melee class, various of them have a long range, besides that they are the melee DPS in the game, they do physical damage but many of them do magic damage too (in skills)",
+            "image": "https://owwya.com/wp-content/uploads/2020/02/Arknights-Guard-Class-Icon.png"
+        },
+        {
+            "type": "Vanguard",
+            "description": "The DP recovery class, they normally have some damage but not so much hp, they focus are in recovery your DP to make you have DP to deploy your units",
+            "image": "https://static.tvtropes.org/pmwiki/pub/images/arknights_vanguard.png"
+        },
+        {
+            "type": "Defender",
+            "description": "It's the tank class, high hp and skills based in defense normally. Can block 3 enemies at once",
+            "image": "https://owwya.com/wp-content/uploads/2020/02/Arknights-Defender-Icon.png"
+        },
+        {
+            "type": "Sniper",
+            "description": "They are Like caster but they do Physical Damage",
+            "image": "https://owwya.com/wp-content/uploads/2020/02/Arknights-Sniper-Class-Icon.png"
+        },
+        {
+            "type": "Specialist",
+            "description": "That class is hard to explain, normally you 'll not put they in your team because the other class are more versatile. Specialist is a class where all operators that do not do the function of the other class. For example in that class operatos: push enemies, pull enemies, buff alies, and others",
+            "image": "https://aceship.github.io/AN-EN-Tags/img/classes/class_specialist.png"
+        },
+        {
+            "type": "Medic",
+            "description": "The healer class, ranged operators that heals everyone",
+            "image": "https://aceship.github.io/AN-EN-Tags/img/classes/class_medic.png"
+        },
+        {
+            "type": "Supporter",
+            "description": "Basically they support the team in their own way. They do slow in the enemies, freeze them or buff allies",
+            "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_support.png"
+        }
+    ]
+}
