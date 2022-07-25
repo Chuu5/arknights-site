@@ -40,5 +40,165 @@
             "description": "Basically they support the team in their own way. They do slow in the enemies, freeze them or buff allies",
             "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_support.png"
         }
-    ]
+    ],
+
+    "operators": {
+        "Caster": [
+            {
+                "name": "Amiya",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_002_amiya_1.png"                
+            },
+            {
+                "name": "Lava",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_121_lava_1.png"
+            },
+            {
+                "name": "Steward",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_210_stward_1.png"
+            },
+            {
+                "name": "Haze",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_141_nights_1.png"
+            },
+            {
+                "name": "Click",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2020-07/char_328_cammou_1_0.png"
+            }
+        ],
+        "Guard": [
+            {
+                "name": "Lappland",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_140_whitew_1.png"
+            }, 
+            {
+                "name": "Cutter",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2020-04/char_301_cutter_1.png"
+            },
+            {
+                "name": "Midnight",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_283_midn_1.png"
+            },
+            {
+                "name": "Melantha",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_208_melan_1.png"
+            },
+            {
+                "name": "Popukar",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_281_popka_1_0.png"
+            }
+        ],
+        "Vanguard": [
+            {
+                "name": "Myrtle",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_151_myrtle_1_0.png"
+            },
+            {
+                "name": "Courier",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_198_blackd_1.png"
+            },
+            {
+                "name": "Fang",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_123_fang_1.png"
+            },
+            {
+                "name": "Vigna",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_290_vigna_1.png"
+            },
+            {
+                "name": "Plume",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_192_falco_1.png"
+            }
+        ],
+        "Defender": [
+            {
+                "name": "Spot",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_284_spot_1_0.png"
+            },
+            {
+                "name": "Gummy",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_196_sunbr_1.png"
+            },
+            {
+                "name": "Beagle",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_122_beagle_1.png"
+            },
+            {
+                "name": "Cuora",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_150_snakek_1.png"
+            },
+            {
+                "name": "Bubble",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2020-10/char_381_bubble_1.png"
+            }
+        ],
+        "Sniper": [
+            {
+                "name": "Kroos",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_124_kroos_1_0.png"
+            },
+            {
+                "name": "Vermeil",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_190_clour_1_0.png"
+            },
+            {
+                "name": "Shirayuki",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_118_yuki_1.png"
+            },
+            {
+                "name": "Jessica",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_235_jesica_1.png"
+            },
+            {
+                "name": "May",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-11/char_133_mm_1_0.png"
+            }
+        ],
+        "Supporter": [
+            {
+                "name": "Orchid",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_278_orchid_1.png"
+            },
+            {
+                "name": "Podenco",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2020-06/char_258_podego_1.png"
+            }
+        ],
+        "Specialist": [
+            {
+                "name": "Gravel",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_237_gravel_1.png"
+            },
+            {
+                "name": "Jaye",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2020-08/char_272_strong_1.png"
+            },
+            {
+                "name": "Shaw",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_277_sqrrel_1.png"
+            }
+        ],
+        "Medic": [
+            {
+                "name": "Perfumer",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_181_flower_1.png"
+            },
+            {
+                "name": "Ansel",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_212_ansel_1.png"
+            },
+            {
+                "name": "Gavial",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_187_ccheal_1.png"
+            },
+            {
+                "name": "Silence",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_108_silent_1.png"
+            },
+            {
+                "name": "Susurro",
+                "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_298_susuro_1_0.png"
+            }
+        ]
+    }
+
 }

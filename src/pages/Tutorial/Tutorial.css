@@ -85,3 +85,67 @@
 .circle-container .circle.active {
     color: white;
 }
+
+
+.sub-title {
+    color: #00affb;
+}
+
+/* Class Section */
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.images div {
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+.images button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 80px;
+
+}
+.images img {
+    height: 100%;
+}
+
+.character {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #162F4B;
+}
+
+.charac-btn {
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.charac-btn img {
+    height: 100%;
+    max-width: 100%;
+    transition: 400ms;
+}
+
+.charac-btn img:hover {
+    transform: scale(1.15);
+}
+
+/* Tier List Section */
