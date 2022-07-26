@@ -1,8 +1,17 @@
+type characProps = {
+    classe: string, 
+    images: any,
+    click: Function,
+    setProps: Function
+}
 
-function Character({classe, images}: {classe: string, images: any}) {
+
+
+function Character({classe, images, click, setProps}: characProps) {
     interface image {
         name: string,
-        image: string
+        image: string,
+        description: string
     }
 
     return(
@@ -16,12 +25,22 @@ function Character({classe, images}: {classe: string, images: any}) {
 
                     return(
                         
-                        <button key={index} className="charac-btn">
+                        <button key={index} className="charac-btn"
+                        onClick={() => {
+                            click()
+                            setProps({
+                                name: imagem.name,
+                                image: imagem.image,
+                                description: imagem.description
+                            })
+                        }}
+                        >
                             <img src={imagem.image} />
                         </button>
                     )
                 })}
             </div>
+            
         </div>
     )
 }

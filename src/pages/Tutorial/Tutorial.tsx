@@ -4,12 +4,21 @@ import Types from "../../components/Types"
 import { useState } from "react"
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 import Character from "../../components/Character"
+import CharacterClicked from "../../components/CharacterClicked"
 
 function Tutorial() {
 
     const [classIndex, setClassIndex] = useState(0)
 
     const [tierList, setTierList] = useState("")
+
+    const [clicked, setClicked] = useState(false)
+
+    const [characProps, setCharacProps] = useState({
+        name: "",
+        image: "",
+        description: ""
+    })
     
     function changeIndex(index: number) {
         if(index + 1 !== Data.classes.length) {
@@ -30,6 +39,11 @@ function Tutorial() {
 
         // Função para mudar de classe ao clickar na flecha esquerda
 
+    }
+
+    function setDisplay() {
+        setClicked(!clicked)
+        
     }
 
 
@@ -128,7 +142,7 @@ function Tutorial() {
 
                         <div className="description">
                             <p>This Tier List is made and focused for new players</p>
-                            <p>And the Tier List will not have any 6 star operator, because they are very expensive for new players level up</p>
+                            <p>Thinking about it there will be no 6 star operator in this tier list, as they are very expensive to level up</p>
                         </div>
 
                         <div className="sub-title">
@@ -154,17 +168,26 @@ function Tutorial() {
 
                         <div className="characters">
                             {keys.map( (key, index) => {
-                                let operator = Data.operators[key]
+                                
+                                // type Operators = {
+                                //     name: string,
+                                //     image: string
+                                // }
+
+                                // let operator: Operators = Data.operators[key][index]
+                               
+                                
                                 
                                 if (tierList === "") {
                                     return (
-                                        <Character key={index} classe={key} images={Data.operators[key]}/>
+                                        <Character setProps={setCharacProps} 
+                                        click={setDisplay} key={index} classe={key} images={Data.operators[key]}/>
                                         
                                     )
                                 } else if (key === tierList) {
                                     return (
-                                        <Character key={index} classe={key} images={Data.operators[key]}/>
-                                        
+                                        <Character setProps={setCharacProps}  
+                                        click={setDisplay} key={index} classe={key} images={Data.operators[key]}/>
                                     )
                                 }
                                 // Esse codigo faz renderizar todos os personagens mas caso estiver filtrado irá renderizar todos
@@ -173,6 +196,8 @@ function Tutorial() {
                     </div>
                 </section>
          </div>
+         
+                {clicked && <CharacterClicked name={characProps.name} image={characProps.image} overview={characProps.description} displayOff={setDisplay}/>}
         </div>
     ) 
 }
