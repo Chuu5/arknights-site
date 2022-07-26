@@ -63,7 +63,7 @@ function Tutorial() {
                     </div>
 
                     <div className="img-cont">
-                        <img src="../../../src/assets/background-tutorial.jpg" alt="" />
+                        <img src="../../assets/background-tutorial.jpg" alt="" />
                     </div>
 
                     <div className="title">
