@@ -28,17 +28,17 @@
         {
             "type": "Specialist",
             "description": "That class is hard to explain, normally you 'll not put they in your team because the other class are more versatile. Specialist is a class where all operators that do not do the function of the other class. For example in that class operatos: push enemies, pull enemies, buff alies, and others",
-            "image": "./src/assets/Specialist/Specialist-icon.webp"
+            "image": "../src/assets/Specialist/Specialist-icon.webp"
         },
         {
             "type": "Medic",
             "description": "The healer class, ranged operators that heals everyone",
-            "image": "./src/assets/Medic/Medic-icon.webp"
+            "image": "../../src/assets/Medic/Medic-icon.webp"
         },
         {
             "type": "Supporter",
             "description": "Basically they support the team in their own way. They do slow in the enemies, freeze them or buff allies",
-            "image": "./src/assets/Supporter/Supporter-icon.webp"
+            "image": "../src/assets/Supporter/Supporter-icon.webp"
         }
     ],
 
@@ -46,186 +46,186 @@
         "Caster": [
             {
                 "name": "Amiya",
-                "image": "./src/assets/Caster/Amiya.webp",
+                "image": "../src/assets/Caster/Amiya.webp",
                 "description": "5 Star Operator; Can be a solid dps magic damage in your team, and if you want, you can use her S3 that can do easily high damage in mostly enemies (but that skill make her be retreated when ends)"
             },
             {
                 "name": "Lava",
-                "image": "./src/assets/Caster/Lava.webp",
+                "image": "../src/assets/Caster/Lava.webp",
                 "description": "3 Star Operator; Simple operator, does AOE magic damage and her skill increase atk speed, can be pretty usefull a caster AOE sometimes"
             },
             {
                 "name": "Steward",
-                "image": "./src/assets/Caster/Steward.webp",
+                "image": "../src/assets/Caster/Steward.webp",
                 "description": "3 Star Operator; Impressively even being a 3 star operator can do high damage to almost do more than amiya, although amiya is better. Anyway you can level up him in the start because he don't need pretty expensive items to level up like amiya so if you want go a head level up him"
             },
             {
                 "name": "Haze",
-                "image": "./src/assets/Caster/Haze.webp",
+                "image": "../src/assets/Caster/Haze.webp",
                 "description": "4 Star Operator; She is like Steward but a bit different because her talent make attacks lower enemy resistance, but the rest is like steward. So you can use her if you want"
             },
             {
                 "name": "Click",
-                "image": "./src/assets/Caster/Click.webp",
+                "image": "../src/assets/Caster/Click.webp",
                 "description": "4 Star Operator; Click is a specific type of caster who use drones to attack enemies. That make him attack 2 time at once, and her S2 make her range expands and give a chance in each attack to stun the enemies."
             }
         ],
         "Guard": [
             {
                 "name": "Lappland",
-                "image": "./src/assets/Guard/Lappland.webp",
+                "image": "../src/assets/Guard/Lappland.webp",
                 "description": "5 Star Operator; Lappland Can be pretty usefull to new players, because her attack range is very long for melees operators, and her S1 have infinite duration and make her do more damage and give chance to resit physical damage. Although what make her so powerfull is her S2 that make her damage turn into magic damage; attack 2 enemies at time and atk increase."
             }, 
             {
                 "name": "Cutter",
-                "image": "./src/assets/Guard/Cutter.webp",
+                "image": "../src/assets/Guard/Cutter.webp",
                 "description": "4 Star Operator; She have pretty decent damage and her skills can burst enemies very easily. Her S2 can attack 5 enemies at time in a large range and the damage is doubled against aerial enemies"
             },
             {
                 "name": "Midnight",
-                "image": "./src/assets/Guard/Midnight.webp",
+                "image": "../src/assets/Guard/Midnight.webp",
                 "description": "3 Star Operator; High range for a melee operator and a solid dps. He is like lappland but worse, him skill make he attacks turn into magic damage; and increase a litte the damage"
             },
             {
                 "name": "Melantha",
-                "image": "./src/assets/Guard/Melantha.webp",
+                "image": "../src/assets/Guard/Melantha.webp",
                 "description": "3 Star Operator; Low range 3 star guard, but even if he is a 3 star he have a high Physical Damage."
             },
             {
                 "name": "Popukar",
-                "image": "./src/assets/Guard/Popukar.webp",
+                "image": "../src/assets/Guard/Popukar.webp",
                 "description": "3 Star Operator; She is like a 'AOE' guard in the game, she hits everyone that she can block in the case 2. She has good stats to tank early game enemies so she is not that bad"
             }
         ],
         "Vanguard": [
             {
                 "name": "Myrtle",
-                "image": "./src/assets/Vanguard/Myrtle.webp",
+                "image": "../src/assets/Vanguard/Myrtle.webp",
                 "description": "4 Star Operator; The DP recovery in person, she is made just to that. her S1 make she is stop attacking and recovery DP (when she stop attacking she will not block any enemies); her S2 do the same but recovery more DP and heal nearby allies (but the cost of S2 is bigger than the S1)"
             },
             {
                 "name": "Courier",
-                "image": "./src/assets/Vanguard/Courier.webp",
+                "image": "../src/assets/Vanguard/Courier.webp",
                 "description": "4 Star Operator; Is a great Vanguard and very versatile, can do damage and recovery DP with the S1, or recovery slowly DP with the S2 but make he more tank"
             },
             {
                 "name": "Fang",
-                "image": "./src/assets/Vanguard/Fang.webp",
+                "image": "../src/assets/Vanguard/Fang.webp",
                 "description": "3 Star Operator; She is a very basic vanguard, a little worse than courier but can do her job as well"
             },
             {
                 "name": "Vigna",
-                "image": "./src/assets/Vanguard/Vigna.webp",
+                "image": "../src/assets/Vanguard/Vigna.webp",
                 "description": "4 Star Operator; She is a Vanguard but Her focus is doing damage, the unique way that se recover DP is killing enemies (+1 DP per enemie)"
             },
             {
                 "name": "Plume",
-                "image": "./src/assets/Vanguard/Plume.webp",
+                "image": "../src/assets/Vanguard/Plume.webp",
                 "description": "3 Star Operator; Same that Vigna but a little worse, do damage and recover by killing enemies"
             }
         ],
         "Defender": [
             {
                 "name": "Spot",
-                "image": "./src/assets/Defender/Spot.webp",
+                "image": "../src/assets/Defender/Spot.webp",
                 "description": "3 Star Operator; A Healer Defender, the S1 make he stop attacking and focus on healing nearby allies, and her talent make the allies that is healed a chance to dodge Physical Damage"
             },
             {
                 "name": "Gummy",
-                "image": "./src/assets/Defender/Gummy.webp",
+                "image": "../src/assets/Defender/Gummy.webp",
                 "description": "4 Star Operator; A Healer Defender, her talent make her attacks have a chance to stun and do more damage against enemies. her S2 can heal nearby allies and buff her defense; that's what make her very usefull, is rare a healer defender having a skill that increase her defense"
             },
             {
                 "name": "Beagle",
-                "image": "./src/assets/Defender/Beagle.webp",
+                "image": "../src/assets/Defender/Beagle.webp",
                 "description": "3 Star Operator; Solid 3 star defender with good def stats, her skill increase a little her defense too"
             },
             {
                 "name": "Cuora",
-                "image": "./src/assets/Defender/Cuora.webp",
+                "image": "../src/assets/Defender/Cuora.webp",
                 "description": "4 Star Operator; She Have one of the highest defense among the lower star operators; her S2 can make her block 4 enemies at time; increase her defense; and restory HP per second."
             },
             {
                 "name": "Bubble",
-                "image": "./src/assets/Defender/Bubble.webp",
+                "image": "../src/assets/Defender/Bubble.webp",
                 "description": "4 Star Operator; A very tank defender like Cuora, her S2 is what make her usefull. make her stop attacking but increase her defense and the likehood of being targeted by enemies; when attacked, do 30% of def as damage to the target"
             }
         ],
         "Sniper": [
             {
                 "name": "Kroos",
-                "image": "./src/assets/Sniper/Kroos.webp",
+                "image": "../src/assets/Sniper/Kroos.webp",
                 "description": "3 star operator; She have a solid ST Damage for a 3 star and very easily to get, probably one of the best to level up"
             },
             {
                 "name": "Vermeil",
-                "image": "./src/assets/Sniper/Vermeil.webp",
+                "image": "../src/assets/Sniper/Vermeil.webp",
                 "description": "4 star Operator; Can do pretty great against weak group of enemies because her S2 make attacks one more target."
             },
             {
                 "name": "Shirayuki",
-                "image": "./src/assets/Sniper/Shirayuki.webp",
+                "image": "../src/assets/Sniper/Shirayuki.webp",
                 "description": "4 Star Operator; Do AOE Damage so you maybe want to use her sometimes but not always; her S2 can do each attack do Magic Damage and slow enemies"
             },
             {
                 "name": "Jessica",
-                "image": "./src/assets/Sniper/Jessica.webp",
+                "image": "../src/assets/Sniper/Jessica.webp",
                 "description": "4 Star Operator, basic like kroos, do ST Damage great and her S2 can make her have 75% to dodge any attacks and increase her atk"
             },
             {
                 "name": "May",
-                "image": "./src/assets/Sniper/May.webp",
+                "image": "../src/assets/Sniper/May.webp",
                 "description": "4 Star Operator; She have a pretty decent damage; her skills provides slow and her S2 give a chance to stun too"
             }
         ],
         "Supporter": [
             {
                 "name": "Orchid",
-                "image": "./src/assets/Supporter/Orchid.webp",
+                "image": "../src/assets/Supporter/Orchid.webp",
                 "description": "3 Star Operator; Attack slow enemies; a good operator to early maps but not good further in the game"
             },
             {
                 "name": "Podenco",
-                "image": "./src/assets/Supporter/Podenco.webp",
+                "image": "../src/assets/Supporter/Podenco.webp",
                 "description": "5 Star Operator; very versatile and strong; can be a healer and also a AOE damage over time; her S1 change her attack by healing attacks. Her S2 do magic damage over time in enemies and slow they; also give silence to they."
             }
         ],
         "Specialist": [
             {
                 "name": "Gravel",
-                "image": "./src/assets/Specialist/Gravel.webp",
+                "image": "../src/assets/Specialist/Gravel.webp",
                 "description": "4 Star Operator, she is a Fast Redeploy Operator, her focus is to be deployed in the map and after some time be removed of the map. Because that type of operator have a fast redeploy time and her skills are skills that are activated when they are deployed. Her S1 buffs her defense when deployed"
             },
             {
                 "name": "Jaye",
-                "image": "./src/assets/Specialist/Jaye.webp",
+                "image": "../src/assets/Specialist/Jaye.webp",
                 "description": "4 Star Operator; He is a DP-Drain type, when deployed he begin to consume -3 DP per second if you don't have 3 DP or more he leave the map. Him S2 is a infinite skill duration; and heal allies or herself HP equal to 30% of the damage dealt"
             },
             {
                 "name": "Shaw",
-                "image": "./src/assets/Specialist/Shaw.webp",
+                "image": "../src/assets/Specialist/Shaw.webp",
                 "description": "4 Star Operator; She is a shift type, she only push enemies away with her skill; can be useful some times"
             }
         ],
         "Medic": [
             {
                 "name": "Perfumer",
-                "image": "./src/assets/Medic/Perfumer.webp",
+                "image": "../src/assets/Medic/Perfumer.webp",
                 "description": "4 Star Operator; She is a AOE healer, what is better is that she have a talent that make all allies heal some HP per second."
             },
             {
                 "name": "Ansel",
-                "image": "./src/assets/Medic/Ansel.webp",
+                "image": "../src/assets/Medic/Ansel.webp",
                 "description": "3 Star Operator, A nice Healer to start, pretty good heal for a 3 star."
             },
             {
                 "name": "Gavial",
-                "image": "./src/assets/Medic/Gavial.webp",
+                "image": "../src/assets/Medic/Gavial.webp",
                 "description": "4 Star Operator, She is like a better Ansel, pretty good heal and her skills are both good"
             },
             {
                 "name": "Susurro",
-                "image": "./src/assets/Medic/Susurro.webp",
+                "image": "../src/assets/Medic/Susurro.webp",
                 "description": "4 Star Operator, A Simple healer in general, like Gavial"
             }
         ]
