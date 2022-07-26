@@ -3,7 +3,7 @@
 }
 
 .tutor-container {
-    width: 800px;
+    width: 1000px;
     max-width: 100%;
 
 
@@ -41,6 +41,28 @@
 
 .highl {
     filter: brightness(1.4);
+}
+
+.tutor-text .img-cont {
+    margin: 0 auto;
+}
+
+
+.content-link {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #4093d6;
+    transition: 200ms;
+}
+
+.content-link a:hover {
+    color: #7eaed4;
 }
 
 .classes {
@@ -128,7 +150,11 @@
 
     padding-bottom: 30px;
     margin-bottom: 10px;
+}
+
+.tutor-text.tier-list {
     border-bottom: 2px solid #162F4B;
+    
 }
 
 .charac-btn {

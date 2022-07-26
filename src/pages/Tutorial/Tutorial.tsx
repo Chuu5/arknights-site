@@ -61,9 +61,24 @@ function Tutorial() {
                     <div className="description">
                         <p>Arknights is a game with many mechanics and things that you can do. In this section we will try to make you understand at least the most importants concepts</p>
                     </div>
+
+                    <div className="img-cont">
+                        <img src="../../../src/assets/background-tutorial.jpg" alt="" />
+                    </div>
+
+                    <div className="title">
+                        <h2>Contents</h2>
+                    </div>
+
+                    <ul className="content-link">
+                        <li><a href="#how-work">How The Game Works</a></li>
+                        <li><a href="#quick-terms">Quick Terms</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#tier-list">Tier List</a></li>
+                    </ul>
                 </div>
 
-                <section>
+                <section id="how-work">
                     <div className="tutor-text">
                         <div className="title">
                             <h2>How the Game Works</h2>
@@ -75,33 +90,28 @@ function Tutorial() {
                         </div>
                     </div>
 
-                    <div className="tutor-text">
-                        <div className="title">
-                            <h2>Some Quick Terms</h2>
-                        </div>
-
-                        <div className="description">
-                            <p><span className="highl">Operators:</span> Units that you deploy in the battle to defende the objective</p>
-
-                            <p><span className="highl">Sanity:</span> It's the energy that you use to playing phases in the Game</p>
-
-                            <p><span className="highl">Classes:</span> Are the type of each operator have, that specific their roles in the team and how they works</p>
-
-                            <p><span className="highl">Deployment Points:</span> (usually called DP) It's the main resource to deploy your operators in the phase. Each operator have a cost to you put him in the phase; every time any operator die in the phase you have to wait some time to put they back and they will cost more DP </p>
-
-                            <p><span className="highl">Elite: </span>Elite is one upgrade that all operators can have if they are more than 2 stars. Elite have diffent items cost for each operator and you can do when reach max lvl. Elite make possible you release new skills and have better stats </p>
-
-                            <p><span className="highl">Orundum:</span> It's a red stone that you use to make rolls in the gacha</p>
-
-
-                            <p><span className="highl">Originite Prime:</span> That stone you can use to buy differents outfits to your operators or you can exchange each Originite Prime for 180 Orundum</p>
-                            
-                        </div>  
-                    </div>
-
                 </section>
 
-                <section>
+                    <section id="quick-terms">
+                        <div className="tutor-text">
+                            <div className="title">
+                                <h2>Some Quick Terms</h2>
+                            </div>
+                            <div className="description">
+                                <p><span className="highl">Operators:</span> Units that you deploy in the battle to defende the objective</p>
+                                <p><span className="highl">Sanity:</span> It's the energy that you use to playing phases in the Game</p>
+                                <p><span className="highl">Classes:</span> Are the type of each operator have, that specific their roles in the team and how they works</p>
+                                <p><span className="highl">Deployment Points:</span> (usually called DP) It's the main resource to deploy your operators in the phase. Each operator have a cost to you put him in the phase; every time any operator die in the phase you have to wait some time to put they back and they will cost more DP </p>
+                                <p><span className="highl">Elite: </span>Elite is one upgrade that all operators can have if they are more than 2 stars. Elite have diffent items cost for each operator and you can do when reach max lvl. Elite make possible you release new skills and have better stats </p>
+                                <p><span className="highl">Orundum:</span> It's a red stone that you use to make rolls in the gacha</p>
+                                <p><span className="highl">Originite Prime:</span> That stone you can use to buy differents outfits to your operators or you can exchange each Originite Prime for 180 Orundum</p>
+                        
+                            </div>
+                        </div>
+                    </section>
+
+
+                <section id="classes">
                     <div className="tutor-text">
                         <div className="title">
                             <h2>Operators Classes</h2>
@@ -134,8 +144,8 @@ function Tutorial() {
                     </div>
                 </section>
 
-                <section>
-                    <div className="tutor-text">
+                <section id="tier-list">
+                    <div className="tutor-text tier-list">
                         <div className="title">
                             <h2>Tier List</h2>
                         </div>
@@ -195,6 +205,12 @@ function Tutorial() {
                         </div>
                     </div>
                 </section>
+
+                <div className="tutor-text">
+                    <div className="description">
+                    I think with all this information you should be able to think and play the game without too many problems. If you need more information, I recommend this site as there will be information on probably everything you have doubts about.
+                    </div>
+                </div>
          </div>
          
                 {clicked && <CharacterClicked name={characProps.name} image={characProps.image} overview={characProps.description} displayOff={setDisplay}/>}

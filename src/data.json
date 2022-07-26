@@ -28,17 +28,17 @@
         {
             "type": "Specialist",
             "description": "That class is hard to explain, normally you 'll not put they in your team because the other class are more versatile. Specialist is a class where all operators that do not do the function of the other class. For example in that class operatos: push enemies, pull enemies, buff alies, and others",
-            "image": "https://aceship.github.io/AN-EN-Tags/img/classes/class_specialist.png"
+            "image": "./src/assets/Specialist/Specialist-icon.webp"
         },
         {
             "type": "Medic",
             "description": "The healer class, ranged operators that heals everyone",
-            "image": "https://aceship.github.io/AN-EN-Tags/img/classes/class_medic.png"
+            "image": "./src/assets/Medic/Medic-icon.webp"
         },
         {
             "type": "Supporter",
             "description": "Basically they support the team in their own way. They do slow in the enemies, freeze them or buff allies",
-            "image": "https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_support.png"
+            "image": "./src/assets/Supporter/Supporter-icon.webp"
         }
     ],
 

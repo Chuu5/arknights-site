@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .home {
@@ -19,7 +20,7 @@ body {
     height: 85vh;
 
 
-    background-image: url(https://aceship.github.io/AN-EN-Tags/img/avg/images/bg_0_coma.png);
+    background-image: url("../../assets/home-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -64,7 +65,7 @@ body {
     /* Centraliza o butão */
 
 
-    background-color: #22BBFF;
+    background-color: #0078AA;
     font-size: 20px;
 
     
@@ -74,6 +75,6 @@ body {
 }
 
 .home-btn a {
-    color: black;
+    color: #333;
 }
 
