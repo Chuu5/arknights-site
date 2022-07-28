@@ -17,7 +17,7 @@ function Tutorial() {
     const [characProps, setCharacProps] = useState({
         name: "",
         image: "",
-        description: ""
+        description: []
     })
     
     function changeIndex(index: number) {

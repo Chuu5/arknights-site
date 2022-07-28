@@ -8,7 +8,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
 }
 
 .home {
@@ -42,6 +41,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
+
     position: absolute;
 }
 
@@ -51,22 +51,24 @@ body {
     gap: 15px;
     text-align: center;
     position: relative;
+
+    transition: 800ms;
 }
 
 .home-btn {
+    transition: 800ms;
     padding: 10px 30px;
     position: absolute;
-    z-index: 200;
     bottom: -60px;
 
 
     left: 50%;
-    transform: translate(-50%, 0);
     /* Centraliza o butão */
 
 
     background-color: #0078AA;
     font-size: 20px;
+    z-index: 200;
 
     
     outline: none;

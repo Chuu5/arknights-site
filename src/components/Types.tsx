@@ -5,20 +5,23 @@ function Types({image, description, title, onClick, leftClick}: {image: string, 
         <div className="classes">
             <button className="arrow"
             onClick={() => leftClick()}>
-                <RiArrowLeftSLine size={100} />
+                <RiArrowLeftSLine size={60} />
             </button>
-            <img src={image} />
-            
-            <div className="description">
-                <div className="title">
-                    <h2>{title}</h2>
+
+            <div className="text-img-class">
+                <img src={image} />
+                
+                <div className="description">
+                    <div className="title">
+                        <h2>{title}</h2>
+                    </div>
+                    <p>{description}</p>
                 </div>
-                <p>{description}</p>
             </div>
 
             <button className="arrow"
             onClick={() => onClick()}>
-                <RiArrowRightSLine size={100} />
+                <RiArrowRightSLine size={60} />
             </button>
         </div>
     )

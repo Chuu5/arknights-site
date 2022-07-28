@@ -76,7 +76,14 @@ a {
     position: relative;
 }
 
-.classes img {
+.classes .text-img-class {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 80%;
+}
+
+.classes .text-img-class img {
     height: 80%;
 }
 
@@ -175,3 +182,26 @@ a {
 }
 
 /* Tier List Section */
+
+
+@media (max-width:600px) {
+    .classes {
+        height: 100%;
+    }
+
+    .classes .text-img-class {
+        flex-direction: column;
+    }
+
+    .classes .text-img-class img {
+        max-width: 100%;
+    }
+
+    .classes .text-img-class .description {
+        /* width: calc(100% + 40px); */
+        width: 100%;
+        line-height: 1.7;
+    }
+
+
+}

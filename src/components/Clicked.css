@@ -33,7 +33,18 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
+}
+
+
+.opened-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.8;
+    font-size: 20px;
+
+    list-style-type: none;
 }
 
 .img-cont {

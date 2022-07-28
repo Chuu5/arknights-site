@@ -1,7 +1,7 @@
 type clickedProps = {
     image: string, 
     name: string, 
-    overview: string,
+    overview: string[],
     displayOff: Function
 }
 
@@ -27,10 +27,15 @@ function CharacterClicked({image, name, overview, displayOff}: clickedProps) {
 
                     <div className="overview">
                         <div className="title">
-                            <h3>Operator Overview</h3>
+                            <h2>Operator Overview</h2>
                         </div>
                         <div className="description">
-                            {overview}
+                            <ul>
+                                {overview.map( (description, index) => {
+                                    return  <li key={index}>{description}</li>
+                                })}
+
+                            </ul>
                         </div>
                     </div>
                 </div>
