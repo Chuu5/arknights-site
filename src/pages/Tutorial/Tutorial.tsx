@@ -52,7 +52,7 @@ function Tutorial() {
     
 
     return (
-        <div className="tutor-body">
+        <div className={clicked ? "tutor-body none" : "tutor-body"}>
             <div className="tutor-container">
                 <div className="tutor-text">
                     <div className="title">

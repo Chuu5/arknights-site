@@ -1,7 +1,7 @@
 .opened {
     background-color: #080c19;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 200;
 
@@ -70,4 +70,16 @@
 
 .close-btn img {
     height: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .opened {
+        height: fit-content;
+    }
+
+    .opened-container {
+        height: 100%;
+        flex-direction: column;
+    }
 }

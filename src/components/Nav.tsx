@@ -1,6 +1,9 @@
 import { Outlet, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoClose } from "react-icons/io5"
+import {AiFillHome, AiFillBook} from "react-icons/ai"
+
+
 import "./Nav.css"
 import { useState } from "react";
 
@@ -18,9 +21,22 @@ function Nav() {
 
                 <div className={click ? "menu active" : "menu"}>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/tutorial">Tutorial</Link></li>
-                        <li><Link to="/summon">Summon</Link></li>
+                        <li> <AiFillHome size={25}/> <span>
+                            <Link to="/">Home</Link>
+                        </span>
+                        </li>
+                        <li>
+                            <AiFillBook size={25} className="tutorial-icon" />
+                            <span>
+                                <Link to="/tutorial">Tutorial</Link>
+                            </span>
+                        </li>
+                        <li>
+                            <img className="summon-icon" src="https://gamepress.gg/arknights/sites/arknights/files/2019-11/redgemSmall_0.png" alt="" />
+                            <span>
+                                <Link to="/summon">Summon</Link>
+                            </span>
+                        </li>
                     </ul>
                 </div>
 

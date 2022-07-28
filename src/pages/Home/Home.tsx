@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import "./Home.css"
 
+
 function Home() {
 
     const [translateY, setTranslateY] = useState("translate(-50%, -500%)")
