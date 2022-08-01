@@ -287,69 +287,84 @@
         "6 Stars": [
             {
                 "name": "Ling",
-                "icon": "./assets/icons/Ling.webp"
+                "icon": "./assets/icons/Ling.webp",
+                "stars": 6
             },
             {
                 "name": "Nian",
-                "icon": "./assets/icons/Nian.webp"
+                "icon": "./assets/icons/Nian.webp",
+                "stars": 6
             },
             {
                 "name": "Lee",
-                "icon": "./assets/icons/Lee.webp"
+                "icon": "./assets/icons/Lee.webp",
+                "stars": 6
             },
             {
                 "name": "Dusk",
-                "icon": "./assets/icons/Dusk.webp"
+                "icon": "./assets/icons/Dusk.webp",
+                "stars": 6
             }
         ],
         "5 Stars": [
             {
                 "name": "Blacknight",
-                "icon": "./assets/icons/Blacknight.webp"
+                "icon": "./assets/icons/Blacknight.webp",
+                "stars": 5
             },
             {
                 "name": "Lappland",
-                "icon": "./assets/icons/Lappland.webp"
+                "icon": "./assets/icons/Lappland.webp",
+                "stars": 5
             },
             {
                 "name": "Skyfire",
-                "icon": "./assets/icons/SkyFire.webp"
+                "icon": "./assets/icons/SkyFire.webp",
+                "stars": 5
             },
             {
                 "name": "Texas",
-                "icon": "./assets/icons/Texas.webp"
+                "icon": "./assets/icons/Texas.webp",
+                "stars": 5
             },
             {
                 "name": "La Pluma",
-                "icon": "./assets/icons/LaPluma.webp"
+                "icon": "./assets/icons/LaPluma.webp",
+                "stars": 5
             }
         ],
         "4 Stars": [
             {
                 "name": "Haze",
-                "icon": "./assets/icons/Haze.webp"
+                "icon": "./assets/icons/Haze.webp",
+                "stars": 4
             },
             {
                 "name": "Rope",
-                "icon": "./assets/icons/Rope.webp"
+                "icon": "./assets/icons/Rope.webp",
+                "stars": 4
             },
             {
                 "name": "Gravel",
-                "icon": "./assets/icons/Gravel.webp"
+                "icon": "./assets/icons/Gravel.webp",
+                "stars": 4
             }
         ],
         "3 Stars": [
             {
                 "name": "Fang",
-                "icon": "./assets/icons/Fang.webp"
+                "icon": "./assets/icons/Fang.webp",
+                "stars": 3
             },
             {
                 "name": "Vanilla",
-                "icon": "./assets/icons/Vanilla.webp"
+                "icon": "./assets/icons/Vanilla.webp",
+                "stars": 3
             },
             {
                 "name": "Plume",
-                "icon": "./assets/icons/Plume.webp"
+                "icon": "./assets/icons/Plume.webp",
+                "stars": 3
             }
         ]
     }

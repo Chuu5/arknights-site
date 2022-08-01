@@ -19,6 +19,8 @@ function Summon() {
     const [counter, setCounter] = useState(0)
 
     const [summonedChars, setSummonedChars] = useState<Object[]>([])
+
+    const [sixStarRate, setSixStarRate] = useState(2)
     
     // 50 %
     const threeStarsChance = 0.5 
@@ -36,32 +38,55 @@ function Summon() {
     function makeAPull() {
         let summoned: any = []
         let count = counter
+        let rate = sixStarRate
+        let gotAFiveStar = false
 
         for(let i = 0; i < 10; i++) {
             let randomNumber = Math.random()
+
+            if (count === 9 && !gotAFiveStar) {
+                randomNumber = 0.02
+                // Fazendo com que caso não tenha pego um cinco estrelas nos primeiros 9 rolls no decimo irá vir um cinco estrelas
+            } else if (count === 100) {
+                randomNumber = 0.001
+            }
             
             if (randomNumber >= threeStarsChance) {
                 threeStars = shuffleArray(threeStars)
                 summoned = [...summoned, threeStars[0]]
                 count += 1
+                if(counter >= 50) {
+                    rate += 2
+                }
+                // Aumenta a chance de pegar um 6 star
             } else if (randomNumber >= fourStarsChance) {
                 fourStars = shuffleArray(fourStars)
                 summoned = [...summoned, fourStars[0]]
                 count += 1
+                if(counter >= 50) {
+                    rate += 2
+                }
             }
              else if (randomNumber >= fiveStarsChance) {
                 fiveStars = shuffleArray(fiveStars)
                 summoned = [...summoned, fiveStars[0]]
                 count += 1
+                if(count >= 50) {
+                    rate += 2
+                }
+                gotAFiveStar = true
             } else {
                 sixStars = shuffleArray(sixStars)
                 summoned = [...summoned, sixStars[0]]
                 count = 0
+                rate = 2
             }
         }
+
         setCounter(count)
         setSummonedChars(summoned)
-
+        setSixStarRate(rate)
+        // Seta o rate up dos 6 estrelas, os personagens sumonados e o contador
     }
 
 
@@ -103,13 +128,28 @@ function Summon() {
 
                 <div className="description">
                     <h4>6 Stars</h4>
-                    <p>Ling [Limited]</p>
-                    <p>Lee</p>
-                    <p>Nian [Limited]</p>
-                    <p>Dusk [Limited]</p>
+                    <div className="featured-op">
+                        <img src={Data.banner["6 Stars"][0].icon} alt="" />
+                        <span>Ling [Limited]</span>
+                    </div>
+                    <div className="featured-op">
+                        <img src={Data.banner["6 Stars"][2].icon} alt="" />
+                        <span>Lee</span>
+                    </div>
+                    <div className="featured-op">
+                        <img src={Data.banner["6 Stars"][1].icon} alt="" />
+                        <span>Nian [Limited]</span>
+                    </div>
+                    <div className="featured-op">
+                        <img src={Data.banner["6 Stars"][3].icon} alt="" />
+                        <span>Dusk [Limited]</span>
+                    </div>
 
                     <h4>5 Stars</h4>
-                    <p>BlackKnight</p>
+                    <div className="featured-op">
+                        <img src={Data.banner["5 Stars"][0].icon} alt="" />
+                        <span>BlackKnight</span>
+                    </div>
                 </div>
 
                 <button className="banner-list">
@@ -130,7 +170,7 @@ function Summon() {
                                     <th>Pulls w/o 6*</th>
                                     <td>{counter}</td>
                                     <th>Current 6 stars rate</th>
-                                    <td>0</td>
+                                    <td>{sixStarRate}%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -138,9 +178,10 @@ function Summon() {
 
                     <div className="summons">
                         {summonedChars.map( (char: any, index) => {
+                            console.log(char.stars);
                             return (
                                 
-                                <div className="summon" key={index}>
+                                <div className={char.stars === 6 ? "summon six" : char.stars === 5 ? "summon five": "summon"} key={index}>
                                     <div className="img-cont icon"><img src={char.icon} alt="" /></div>
                                     <p>{char.name}</p>
                                 </div>
