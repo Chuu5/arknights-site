@@ -281,6 +281,77 @@
                 "A Simple healer in general, like Gavial"]
             }
         ]
+    },
+
+    "banner": {
+        "6 Stars": [
+            {
+                "name": "Ling",
+                "icon": "./assets/icons/Ling.webp"
+            },
+            {
+                "name": "Nian",
+                "icon": "./assets/icons/Nian.webp"
+            },
+            {
+                "name": "Lee",
+                "icon": "./assets/icons/Lee.webp"
+            },
+            {
+                "name": "Dusk",
+                "icon": "./assets/icons/Dusk.webp"
+            }
+        ],
+        "5 Stars": [
+            {
+                "name": "Blacknight",
+                "icon": "./assets/icons/Blacknight.webp"
+            },
+            {
+                "name": "Lappland",
+                "icon": "./assets/icons/Lappland.webp"
+            },
+            {
+                "name": "Skyfire",
+                "icon": "./assets/icons/SkyFire.webp"
+            },
+            {
+                "name": "Texas",
+                "icon": "./assets/icons/Texas.webp"
+            },
+            {
+                "name": "La Pluma",
+                "icon": "./assets/icons/LaPluma.webp"
+            }
+        ],
+        "4 Stars": [
+            {
+                "name": "Haze",
+                "icon": "./assets/icons/Haze.webp"
+            },
+            {
+                "name": "Rope",
+                "icon": "./assets/icons/Rope.webp"
+            },
+            {
+                "name": "Gravel",
+                "icon": "./assets/icons/Gravel.webp"
+            }
+        ],
+        "3 Stars": [
+            {
+                "name": "Fang",
+                "icon": "./assets/icons/Fang.webp"
+            },
+            {
+                "name": "Vanilla",
+                "icon": "./assets/icons/Vanilla.webp"
+            },
+            {
+                "name": "Plume",
+                "icon": "./assets/icons/Plume.webp"
+            }
+        ]
     }
 
 }

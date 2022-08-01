@@ -8,17 +8,19 @@ import CharacterClicked from "../../components/CharacterClicked"
 
 function Tutorial() {
 
+    type Charac = {
+        name: string,
+        image: string,
+        description: string[]
+    }
+
     const [classIndex, setClassIndex] = useState(0)
 
     const [tierList, setTierList] = useState("")
 
     const [clicked, setClicked] = useState(false)
 
-    const [characProps, setCharacProps] = useState({
-        name: "",
-        image: "",
-        description: []
-    })
+    const [characProps, setCharacProps] = useState<Charac>({} as Charac)
     
     function changeIndex(index: number) {
         if(index + 1 !== Data.classes.length) {
@@ -46,9 +48,10 @@ function Tutorial() {
         
     }
 
+    
 
     const keys = (Object.keys(Data.operators) as (keyof typeof Data.operators)[])
-    
+    // Faz um array com o nome de todas as classes
     
 
     return (
