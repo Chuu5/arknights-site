@@ -5,8 +5,10 @@ import { useState } from "react"
 function Summon() {
 
 
-    type character = {
+    type Characters = {
         name: string,
+        icon: string,
+        stars: number
     }
 
     let threeStars = Data.banner["3 Stars"]
@@ -18,9 +20,11 @@ function Summon() {
 
     const [counter, setCounter] = useState(0)
 
-    const [summonedChars, setSummonedChars] = useState<Object[]>([])
+    const [summonedChars, setSummonedChars] = useState<Characters[]>([])
 
     const [sixStarRate, setSixStarRate] = useState(2)
+
+    const [clicked, setClicked] = useState(false)
     
     // 50 %
     const threeStarsChance = 0.5 
@@ -90,17 +94,18 @@ function Summon() {
     }
 
 
-        function shuffleArray(array: any) {
-            let newArray = array.concat()
-    
-            
-            for (let i = newArray.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-            }
-            // O que acontece aqui é até que simplês, temos a constante J que randomiza um número de 0 a i, e damos o valor do array[i] o valor do array[j] e vice-versa 
-            return newArray
+    function shuffleArray(array: any) {
+        let newArray = array.concat()
+
+        
+        for (let i = newArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
         }
+        // O que acontece aqui é até que simplês, temos a constante J que randomiza um número de 0 a i, e damos o valor do array[i] o valor do array[j] e vice-versa 
+        return newArray
+    }
+
 
     
     
@@ -115,7 +120,7 @@ function Summon() {
                     <p>
                     The summon (or gacha) is one of the main mechanics of a gacha like arknights, in this section we will simulate how the pulls are done on it. In arknights we have a counter that starts with 0 and for each roll you make it will increase by 1, if your counter reaches 50 without getting any operator 6 star, every roll after 50 will increase 2% chance of getting one 6 star in the next rolls. Making the 100 roll sure to get a 6 star.
                     </p>
-                    <p className="opacity">Ps: The counter is reset if you get a 6 star and it remains the same counter even when the banner is changed</p>
+                    <p className="opacity">Ps: The counter is reseted if you get a 6 star and it remains the same counter even when the banner is changed</p>
                 </div>
 
                 <div className="img-cont">
@@ -152,9 +157,27 @@ function Summon() {
                     </div>
                 </div>
 
-                <button className="banner-list">
-                    All Operators
-                </button>
+                <div className={clicked ? "banner-list clicked" : "banner-list"}>
+                    <button
+                    onClick={() => setClicked(!clicked)}>
+                        All Operators
+                    </button>
+
+                        {(Object.keys(Data.banner) as (keyof typeof Data.banner)[]).map( (key, index) => {
+                            
+                            return (
+                                <div className="all-ops" key={index}>
+                                    <h4>{key}</h4>
+
+                                    {Data.banner[key].map((op, index2) => {
+                                        return(
+                                            <p key={index2}>{op.name}</p>
+                                        )
+                                    })}
+                                </div>
+                            ) 
+                        })}
+                </div>
 
                 <button className="pull"
                 onClick={() => makeAPull()}>
@@ -177,7 +200,7 @@ function Summon() {
                     </div>
 
                     <div className="summons">
-                        {summonedChars.map( (char: any, index) => {
+                        {summonedChars.map( (char: Characters, index) => {
                             console.log(char.stars);
                             return (
                                 
