@@ -192,6 +192,8 @@ function Summon() {
                                 <tr>
                                     <th>Pulls w/o 6*</th>
                                     <td>{counter}</td>
+                                </tr>
+                                <tr>
                                     <th>Current 6 stars rate</th>
                                     <td>{sixStarRate}%</td>
                                 </tr>

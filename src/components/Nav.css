@@ -4,7 +4,7 @@ nav {
     justify-content: space-between;
     height: 15vh;
     padding: 0 20px;
-    background-color: #1A1C22;
+    background-color: #181A1B;
     /* background-color: #7F8487; */
 }
 
@@ -47,7 +47,7 @@ nav .menu ul li {
 
 nav .menu ul a {
     /* color: rgb(36, 33, 33); */
-    color: white;
+    color: #B0AA9F;
 
 }
 
@@ -82,13 +82,18 @@ nav .open-menu, nav .close-menu {
 
     }
 
+    nav .menu.active ul li {
+        margin-bottom: 15px;
+    }
+
     nav .menu.active ul a {
         color: #A8AAAD;
-
+        padding-left: 5px;
     }
 
     nav .menu.active ul {
         padding: 30px 50px;
+        gap: 0px;
         flex-direction: column;
         font-size: 18px;
     }
