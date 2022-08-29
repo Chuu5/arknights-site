@@ -162,21 +162,21 @@ function Summon() {
                     onClick={() => setClicked(!clicked)}>
                         All Operators
                     </button>
+                    {/* Rendering all operators after clicking the button */}
+                    {(Object.keys(Data.banner) as (keyof typeof Data.banner)[]).map( (key, index) => {
+                        
+                        return (
+                            <div className="all-ops" key={index}>
+                                <h4>{key}</h4>
 
-                        {(Object.keys(Data.banner) as (keyof typeof Data.banner)[]).map( (key, index) => {
-                            
-                            return (
-                                <div className="all-ops" key={index}>
-                                    <h4>{key}</h4>
-
-                                    {Data.banner[key].map((op, index2) => {
-                                        return(
-                                            <p key={index2}>{op.name}</p>
-                                        )
-                                    })}
-                                </div>
-                            ) 
-                        })}
+                                {Data.banner[key].map((op, index2) => {
+                                    return(
+                                        <p key={index2}>{op.name}</p>
+                                    )
+                                })}
+                            </div>
+                        ) 
+                    })}
                 </div>
 
                 <button className="pull"
@@ -203,7 +203,6 @@ function Summon() {
 
                     <div className="summons">
                         {summonedChars.map( (char: Characters, index) => {
-                            console.log(char.stars);
                             return (
                                 
                                 <div className={char.stars === 6 ? "summon six" : char.stars === 5 ? "summon five": "summon"} key={index}>

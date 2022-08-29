@@ -4,7 +4,7 @@ nav {
     justify-content: space-between;
     height: 15vh;
     padding: 0 20px;
-    background-color: #181A1B;
+    background-color: #151D20;
     /* background-color: #7F8487; */
 }
 
@@ -22,12 +22,13 @@ nav .logo img {
 
 nav .menu ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    margin-right: 60px;
     list-style-type: none;
 }
 
 nav .menu svg {
-    vertical-align: bottom;
+    /* vertical-align: top; */
     color: #F5F5F5;
 }
 
@@ -47,8 +48,12 @@ nav .menu ul li {
 
 nav .menu ul a {
     /* color: rgb(36, 33, 33); */
-    color: #B0AA9F;
+    color: #70777D;
+    transition: 400ms;
+}
 
+nav .menu ul a:hover {
+    color: white;;
 }
 
 nav .open-menu, nav .close-menu {

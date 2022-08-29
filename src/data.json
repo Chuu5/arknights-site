@@ -331,6 +331,26 @@
                 "name": "La Pluma",
                 "icon": "./assets/icons/LaPluma.webp",
                 "stars": 5
+            },
+            {
+                "name": "Blue Poison",
+                "icon": "./assets/icons/Blue_Poison.webp",
+                "stars": 5
+            },
+            {
+                "name": "Specter",
+                "icon": "./assets/icons/Specter.webp",
+                "stars": 5
+            },
+            {
+                "name": "Sora",
+                "icon": "./assets/icons/Sora.webp",
+                "stars": 5
+            },
+            {
+                "name": "Projekt Red",
+                "icon": "./assets/icons/Projekt_Red.webp",
+                "stars": 5
             }
         ],
         "4 Stars": [
@@ -348,6 +368,36 @@
                 "name": "Gravel",
                 "icon": "./assets/icons/Gravel.webp",
                 "stars": 4
+            },
+            {
+                "name": "Sussurro",
+                "icon": "./assets/icons/Sussurro.webp",
+                "stars": 4
+            },
+            {
+                "name": "Meteor",
+                "icon": "./assets/icons/Meteor.webp",
+                "stars": 4
+            },
+            {
+                "name": "Myrtle",
+                "icon": "./assets/icons/Myrtle.webp",
+                "stars": 4
+            },
+            {
+                "name": "Perfumer",
+                "icon": "./assets/icons/Perfumer.webp",
+                "stars": 4
+            },
+            {
+                "name": "Vermeil",
+                "icon": "./assets/icons/Vermeil.webp",
+                "stars": 4
+            },
+            {
+                "name": "Vigna",
+                "icon": "./assets/icons/Vigna.webp",
+                "stars": 4
             }
         ],
         "3 Stars": [
@@ -364,6 +414,31 @@
             {
                 "name": "Plume",
                 "icon": "./assets/icons/Plume.webp",
+                "stars": 3
+            },
+            {
+                "name": "Spot",
+                "icon": "./assets/icons/Spot.webp",
+                "stars": 3
+            },
+            {
+                "name": "Steward",
+                "icon": "./assets/icons/Steward.webp",
+                "stars": 3
+            },
+            {
+                "name": "Beagle",
+                "icon": "./assets/icons/Beagle.webp",
+                "stars": 3
+            },
+            {
+                "name": "Kroos",
+                "icon": "./assets/icons/Kroos.webp",
+                "stars": 3
+            },
+            {
+                "name": "Lava",
+                "icon": "./assets/icons/Lava.webp",
                 "stars": 3
             }
         ]
