@@ -351,6 +351,21 @@
                 "name": "Projekt Red",
                 "icon": "./assets/icons/Projekt_Red.webp",
                 "stars": 5
+            },
+            {
+                "name": "Ashlock",
+                "icon": "./assets/icons/Ashlock.webp",
+                "stars": 5
+            },
+            {
+                "name": "April",
+                "icon": "./assets/icons/April.webp",
+                "stars": 5
+            },
+            {
+                "name": "Astesia",
+                "icon": "./assets/icons/Astesia.webp",
+                "stars": 5
             }
         ],
         "4 Stars": [
@@ -397,6 +412,11 @@
             {
                 "name": "Vigna",
                 "icon": "./assets/icons/Vigna.webp",
+                "stars": 4
+            },
+            {
+                "name": "Ambriel",
+                "icon": "./assets/icons/Ambriel.webp",
                 "stars": 4
             }
         ],
