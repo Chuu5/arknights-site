@@ -59,7 +59,7 @@ function Summon() {
                 threeStars = shuffleArray(threeStars)
                 summoned = [...summoned, threeStars[0]]
                 count += 1
-                if(counter >= 50) {
+                if(count > 50) {
                     rate += 2
                 }
                 // Aumenta a chance de pegar um 6 star
@@ -67,7 +67,7 @@ function Summon() {
                 fourStars = shuffleArray(fourStars)
                 summoned = [...summoned, fourStars[0]]
                 count += 1
-                if(counter >= 50) {
+                if(count > 50) {
                     rate += 2
                 }
             }
@@ -75,7 +75,7 @@ function Summon() {
                 fiveStars = shuffleArray(fiveStars)
                 summoned = [...summoned, fiveStars[0]]
                 count += 1
-                if(count >= 50) {
+                if(count > 50) {
                     rate += 2
                 }
                 gotAFiveStar = true
