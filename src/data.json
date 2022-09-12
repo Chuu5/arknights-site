@@ -366,6 +366,21 @@
                 "name": "Astesia",
                 "icon": "./assets/icons/Astesia.webp",
                 "stars": 5
+            },
+            {
+                "name": "Pramanix",
+                "icon": "./assets/icons/Pramanix.webp",
+                "stars": 5
+            },
+            {
+                "name": "Cliffheart",
+                "icon": "./assets/icons/Cliffheart.webp",
+                "stars": 5
+            },
+            {
+                "name": "Manticore",
+                "icon": "./assets/icons/Manticore.webp",
+                "stars": 5
             }
         ],
         "4 Stars": [
