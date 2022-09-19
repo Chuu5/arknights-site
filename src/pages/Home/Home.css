@@ -37,7 +37,7 @@ body {
     width: 100%;
     height: 85vh;
 
-    background-image: url(https://3tecnos.com.br/wp-content/uploads/2018/08/fundo_trans-4.png);
+    background-image: url(../../assets/fundo_trans.png);
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
